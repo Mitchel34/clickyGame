@@ -62,6 +62,7 @@ componentDidMount = () => {
       if (score === carCount) {
         win = true
         roundEnd = true
+        setTimeout(this.roundReset, 2000)
       }
     }
 
